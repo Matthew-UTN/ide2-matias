@@ -9,8 +9,6 @@ notifications:
       - matiramos8@msn.com
 services:
   - mysql
-before_install:
-
 script:
   #Test unitario y de integracion con cobertura (jacoco)
   - mvn verify
