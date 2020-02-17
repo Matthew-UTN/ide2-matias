@@ -16,6 +16,3 @@ script:
   - mvn verify
   - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=Alemoyaa_MasterWeb-upm -Dsonar.login=$SONAR
-addons:
-  sonarcloud:
-    organization: "alemoyaa"
