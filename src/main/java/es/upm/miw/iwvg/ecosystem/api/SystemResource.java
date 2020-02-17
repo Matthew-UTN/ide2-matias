@@ -22,7 +22,7 @@ public class SystemResource {
 
     @GetMapping(value = VERSION_BADGE, produces = {"image/svg+xml"})
     public byte[] generateBadge() { // http://localhost:8080/system/badge
-        return new Badge().generateBadge("Heroku", "v" + buildVersion).getBytes();
+        return new Badge().generateBadge("Heroku", "video3" + buildVersion).getBytes();
     }
 
     @GetMapping(value = VERSION)
